@@ -5,8 +5,8 @@ export default Ember.Controller.extend({
     login() {
       var username = this.get('username');
       var password = this.get('password');
-      alert(this.get('username'));
-      alert(this.get('password'));
+      alert(username);
+      alert(password);
     }
   }
 });
