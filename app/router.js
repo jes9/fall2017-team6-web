@@ -12,6 +12,8 @@ Router.map(function() {
   this.route('personal-info');
   this.route('vehicle-info');
   this.route('welcome-page');
+  this.route('login');
+  this.route('dashboard');
 });
 
 export default Router;
