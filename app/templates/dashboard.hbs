@@ -1,4 +1,38 @@
 <div align="center">
-<h1>Dashboard</h1>
-{{outlet}}
+  <h1>Dashboard</h1>
+  <div class="links">
+  <style type="text/css">
+    a:link{ text-decoration:none; background:#d3d3d3; color:black; font-size:170%; width:200px;}
+  </style>
+    {{#link-to 'dashboard'}}
+      <body>
+        <a href="#">Recent Activity</a> <br/>
+      </body>
+    {{/link-to}}
+
+    {{#link-to 'dashboard'}}
+      <body>
+        <a href="#">My Car</a> <br/>
+      </body>
+    {{/link-to}}
+
+    {{#link-to 'dashboard'}}
+      <body>
+        <a href="#">Mechanic Page</a> <br/>
+      </body>
+    {{/link-to}}
+
+    {{#link-to 'dashboard'}}
+      <body>
+        <a href="#">Diagnostic Report</a> <br/>
+      </body>
+    {{/link-to}}
+
+    {{#link-to 'dashboard'}}
+      <body>
+        <a href="#">Chatbot</a> <br/>
+      </body>
+    {{/link-to}}
+    <br />
+  </div>
 </div>
