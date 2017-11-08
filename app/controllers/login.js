@@ -3,10 +3,16 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     login() {
-      var username = this.get('username');
-      var password = this.get('password');
-      alert(username);
-      alert(password);
+      if (this.get('username')=='user') {
+        if (this.get('password')=='pass') {
+          this.transitionToRoute('dashboard');
+        }
+         else {
+           alert('Incorrect password.');
+         }
+      } else {
+        alert('Incorrect username/password combination.');
+      }
     }
   }
 });
