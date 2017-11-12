@@ -1,42 +1,42 @@
-<div class="container">
-	<div align="center">
+<div align="center">
 	  <h2>ABOUT YOU</h2>
 	  <br />
+	  <!-- set up button style -->
+	  <style type="text/css">
+	   button{ text-decoration:none; font-size:150%; border:1px solid black; background:white; border-radius:15px; width:130px; padding:5px 30px;}
+	   </style>
 	  <style>
 	  select{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}
 	  </style>
 	  <style>
 	  input{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}
 	  </style>
-	  <form class="container">
-	  <input type="text" placeholder="first name">
+	   <!-- avoid submitting if validation return false -->
+	  <form name="form2" onsubmit="window.location.href='vehicle-info'; return false;">
+	  <input name="first_name" type="text" placeholder="first name" required>
 	  <br />
 	  <br />
-	  <input type="text" placeholder="last name">
+	  <input name="last_name" type="text" placeholder="last name" required>
 	  <br />
 	  <br />
-	  <select class="select" name="gender">
+	  <select class="select" name="gender" required>
 	  <option value="" disabled selected>gender</option>
 	  <option value="1">male</option>
 	  <option value="2">female</option>
 	  </select>
 	  <br />
 	  <br />
-	  <input type="date" placeholder="birthday">
+	   <!-- change birthday by age number -->
+	  <input name="age" type="number" min="16" max="120" placeholder="age" required>
 	  <br />
 	  <br />
-	  <input type="tel" placeholder="phone number">
+	   <!-- set up phone number pattern  -->
+	  <input name="phone_number" type='tel' pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}' placeholder="phone number:(xxx)xxx-xxxx" required>
+	  <br />
+	  <br />
+	  <!-- action will prevent submitting before validation -->
+	  <button{{action}}>next</button>
 	  </form>
-	  <br />
-	  <div class="links">
-	   <style type="text/css">
-	   a:link{ text-decoration:none; font-size:200%; border:1px solid black; background:white; border-radius:20px; width:100px; padding:5px 30px;}
-	   </style>
-	   <body>
-	   <a href="vehicle-info">next</a> <br/>
-	   </body>
-	   <br />
-       </div>
-	</div>
 </div>
+
 
