@@ -1,30 +1,46 @@
-<div class="container">
-	<div align="center">
+<div align="center">
 	  <h2>CREATE YOUR ACCOUNT</h2>
+	  <!-- set up button style -->
+	  <style type="text/css">
+	   button{ text-decoration:none; font-size:150%; border:1px solid black; background:white; border-radius:15px; width:130px; padding:5px 30px;}
+	   </style>
 	  <br />
+	   <!-- set up input style -->
 	  <style>
 	  input{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}
 	  </style>
-	  <form class="container">
-	  <input type="email" placeholder="email@gmail.com">
+	   <!-- avoid submitting if validation return false -->
+	  <form name="form1" onsubmit="window.location.href = 'personal-info'; return false;">
+	  <input name="email" type="email" placeholder="email@gmail.com" required>
 	  <br />
 	  <br />
-	  <input type="password" placeholder="password">
+	  <input id="password" name="password" type="password" placeholder="password" minLength="6" maxLength="10" required>
 	  <br />
 	  <br />
-	  <input type="password" placeholder="confirm password">
+	  <input id="confirm_password" name="confirm_password" type="password" placeholder="confirm password" required>
+	  <br />
+	  <br />
+	   <!-- check if password matches confirm_password -->
+	  <script>
+	  var password = document.getElementById("password")
+	, confirm_password = document.getElementById("confirm_password");
+
+		function validatePassword()
+	{
+		if(password.value != confirm_password.value) {
+		confirm_password.setCustomValidity("Passwords Don't Match");
+		} 
+		else
+		{
+		confirm_password.setCustomValidity('');
+		}
+	}
+	password.onchange = validatePassword;
+	confirm_password.onkeyup = validatePassword;
+	  </script>
+	   <!-- action will prevent submitting before validation -->
+	  <button {{action}}>next</button>
 	  </form>
-	  <br />
-	  <br />
-	  <div class="links">
-	   <style type="text/css">
-	   a:link{ text-decoration:none; font-size:200%; border:1px solid black; background:white; border-radius:20px; width:100px; padding:5px 30px;}
-	   </style>
-	   <body>
-	   <a href="personal-info">next</a> <br/>
-	   </body>
-	   <br />
-       </div>
-	</div>
 </div>
+
 
