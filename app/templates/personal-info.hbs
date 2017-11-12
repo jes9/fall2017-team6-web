@@ -6,10 +6,11 @@
 	   button{ text-decoration:none; font-size:150%; border:1px solid black; background:white; border-radius:15px; width:130px; padding:5px 30px;}
 	   </style>
 	  <style>
-	  select{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}
+	  select{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:200px; height:50px; font-size:30px;}
 	  </style>
 	  <style>
-	  input{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}
+	  <!-- put age and gender in the same line -->
+	  input{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}#age{width:200px;}
 	  </style>
 	   <!-- avoid submitting if validation return false -->
 	  <form name="form2" onsubmit="window.location.href='vehicle-info'; return false;">
@@ -24,10 +25,8 @@
 	  <option value="1">male</option>
 	  <option value="2">female</option>
 	  </select>
-	  <br />
-	  <br />
 	   <!-- change birthday by age number -->
-	  <input name="age" type="number" min="16" max="120" placeholder="age" required>
+	  <input id="age" name="age" type="number" min="16" max="120" placeholder="age" required>
 	  <br />
 	  <br />
 	   <!-- set up phone number pattern  -->
