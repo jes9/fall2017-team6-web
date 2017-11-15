@@ -13,6 +13,10 @@ export default Ember.Controller.extend({
       } else {
         alert('Incorrect username/password combination.');
       }
+    },
+
+    home() {
+      this.transitionToRoute('');
     }
   }
 });
