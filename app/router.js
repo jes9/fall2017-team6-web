@@ -14,6 +14,8 @@ Router.map(function() {
   this.route('login');
   this.route('dashboard');
   this.route('mechanic');
+  this.route('sign-in');
+  this.route('sign-up');
 });
 
 export default Router;
