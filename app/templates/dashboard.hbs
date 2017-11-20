@@ -33,6 +33,18 @@
         <a href="#">Chatbot</a> <br/>
       </body>
     {{/link-to}}
+    <button {{action "signOut"}}>Sign Out</button>
     <br />
+    {{#each model as |account|}}
+      <div>
+        <p>{{account.username}}</p>
+      </div>
+      <div>
+        <p>{{account.email}}</p>
+      </div>
+      <div>
+
+      </div>
+    {{/each}}
   </div>
 </div>

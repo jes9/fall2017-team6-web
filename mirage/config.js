@@ -58,7 +58,7 @@ export default function() {
 
     if (body.client_id !== 'dummy') {
       return new Response (400, {'Content-Type': 'application/json'}, {
-        errors: {code: 'invalid_client', message: 'Your client id is not valid.'}
+        errors: {code: 'invalid_client', message: body.client_id }
       });
     }
 
