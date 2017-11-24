@@ -39,7 +39,7 @@
 	confirm_password.onkeyup = validatePassword;
 	  </script>
 	   <!-- action will prevent submitting before validation -->
-	  <button {{action "createAccount"}}>next</button>
+	  <button {{action}}>next</button>
 	  </form>
 </div>
 

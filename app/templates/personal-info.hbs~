@@ -14,13 +14,13 @@
 	  </style>
 	   <!-- avoid submitting if validation return false -->
 	  <form name="form2" onsubmit="window.location.href='vehicle-info'; return false;">
-	  <input id="first_name" name="first_name" type="text" placeholder="first name" required>
+	  <input name="first_name" type="text" placeholder="first name" required>
 	  <br />
 	  <br />
-	  <input id="last_name" name="last_name" type="text" placeholder="last name" required>
+	  <input name="last_name" type="text" placeholder="last name" required>
 	  <br />
 	  <br />
-	  <select id="gender" class="select" name="gender" required>
+	  <select class="select" name="gender" required>
 	  <option value="" disabled selected>gender</option>
 	  <option value="1">male</option>
 	  <option value="2">female</option>
@@ -30,12 +30,11 @@
 	  <br />
 	  <br />
 	   <!-- set up phone number pattern  -->
-	  <input id="phone_number" name="phone_number" type='tel' pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}' placeholder="phone number:(xxx)xxx-xxxx" required>
+	  <input name="phone_number" type='tel' pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}' placeholder="phone number:(xxx)xxx-xxxx" required>
 	  <br />
 	  <br />
 	  <!-- action will prevent submitting before validation -->
-	  {{action}}
-	  <button{{action "createAccount"}}>next</button>
+	  <button{{action}}>next</button>
 	  </form>
 </div>
 

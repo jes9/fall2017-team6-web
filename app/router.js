@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('vehicle-info');
   this.route('login');
   this.route('dashboard');
+  this.route('sign-in');
 });
 
 export default Router;

@@ -1,0 +1,18 @@
+import Controller from '@ember/controller';
+
+export default Controller.extend({
+  actions: {
+    createAccount() {
+      let {first_name, last_name, gender, age, phone_number} = this.getProperties (['first_name', 'last_name', 'gender', 'age', 'phone_number']);
+      let personal-info = this.get ('store').createRecord ('account', {first_name, last_name, gender, age, phone_number});
+      let adapterOptions = {signIn: true};
+      
+      personal-info.save ({adapterOptions}).then (personal-info => {
+        // You can transition to a protected application route
+        this.transitionToRoute('vehicle-info');
+      }).catch (reason => {
+        // Display error message to user
+      });
+    }
+  }
+});

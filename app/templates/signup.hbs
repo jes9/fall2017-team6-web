@@ -6,22 +6,12 @@
 <div class="jumbo">
     <div class="links">
 	<div align="center">
-      {{#link-to 'register'}}
 	  <style type="text/css">
-	  a:link{ text-decoration:none; background:#d3d3d3; color:black; font-size:170%; width:300px;}
+	  button:{ text-decoration:none; background:#d3d3d3; color:black; font-size:170%; width:300px;}
 	  </style>
-	  <body>
-	  <a href="#">I am a car owner</a> <br/>
-	  </body>
-      {{/link-to}}
-	  {{#link-to 'register'}}
-	  <style type="text/css">
-	  a:link{ text-decoration:none; background:#d3d3d3; color:black; font-size:170%, width:300px}
-	  </style>
-	  <body>
-	  <a href="#">I am a car mechanic</a> <br/>
-	  </body>
-      {{/link-to}}
+	  <button {{action "onClick"}}>I am a car owner</button>
+	  <br />
+	  <button {{action "onClick"}}>I am a car owner</button>
 	  <br />
     </div>
 	</div>

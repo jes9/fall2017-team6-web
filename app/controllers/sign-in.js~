@@ -1,0 +1,10 @@
+import Gatekeeper from 'ember-cli-gatekeeper';
+import Ember from 'ember';
+
+export default Gatekeeper.SignInController.extend ({
+	actions: {
+    onSubmit() {
+        this.transitionToRoute('signup');
+      }
+  }
+});
