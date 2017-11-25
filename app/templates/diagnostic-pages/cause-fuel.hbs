@@ -1,3 +1,17 @@
+<h1>What kind of fuel do you use?</h1>
+<h3><button {{action "fuelSelected"}}>Unleaded</button></h3>
+<h3><button {{action "fuelSelected"}}>Regular</button></h3>
+<h3><button {{action "fuelSelected"}}>Premium</button></h3>
+<h3><button {{action "fuelSelected"}}>Diesel</button></h3>
+<h2>Fuel Brand: (optional)</h2>
+<div class="fuel-brand">
+  {{input type="text" class="fuel-brand" value=other placeholder="BP, Shell, Exxon, etc."}}
+</div>
+{{#link-to 'diagnostic-pages.car-select'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.cause-when'}}
   <body>
     <a href="#">Next</a> <br/>

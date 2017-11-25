@@ -1,3 +1,15 @@
+<h1>When does it happen?</h1>
+<h2>When the engine temperature gauge reads: </h2>
+<h3><button {{action "engineSelected"}}>Cold</button></h3>
+<h3><button {{action "engineSelected"}}>Warm-up</button></h3>
+<h3><button {{action "engineSelected"}}>Normale</button></h3>
+<h3><button {{action "engineSelected"}}>Hot</button></h3>
+<h3><button {{action "engineSelected"}}>All temperatures</button></h3>
+{{#link-to 'diagnostic-pages.car-select'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.cause-driving'}}
   <body>
     <a href="#">Next</a> <br/>

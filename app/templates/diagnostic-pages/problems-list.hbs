@@ -1,3 +1,23 @@
+<h1>What's wrong?</h1>
+<h3><button {{action "probSelected"}}>Hard Starting</button></h3>
+<h3><button {{action "probSelected"}}>Delayed Starting</button></h3>
+<h3><button {{action "probSelected"}}>Starts normally but engine stalls</button></h3>
+<h3><button {{action "probSelected"}}>Unsteady Idle Speed</button></h3>
+<h3><button {{action "probSelected"}}>High Idle Speed</button></h3>
+<h3><button {{action "probSelected"}}>Engine Stalls on Acceleration</button></h3>
+<h3><button {{action "probSelected"}}>Engine Stalls on Decceleration</button></h3>
+<h3><button {{action "probSelected"}}>Engine Pings or Knocks</button></h3>
+<h3><button {{action "probSelected"}}>Engine Runs After Key is Turned Off</button></h3>
+<h3><button {{action "probSelected"}}>Engine Makes a Popping Noise</button></h3>
+<h3><button {{action "probSelected"}}>Poor Gas Mileage</button></h3>
+<div class="other-problem">
+  {{input type="text" class="other-problem" value=other placeholder="Other"}}
+</div>
+{{#link-to 'diagnostic-pages.car-select'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.cause-temperature'}}
   <body>
     <a href="#">Next</a> <br/>

@@ -1,3 +1,14 @@
+<h1>When does it happen?</h1>
+<h2>During these driving conditions: </h2>
+<h3><button {{action "driveSelected"}}>Accelerating</button></h3>
+<h3><button {{action "driveSelected"}}>Decelerating</button></h3>
+<h3><button {{action "driveSelected"}}>Cruising</button></h3>
+<h3><button {{action "driveSelected"}}>Braking</button></h3>
+{{#link-to 'diagnostic-pages.car-select'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.cause-ro'}}
   <body>
     <a href="#">Next</a> <br/>

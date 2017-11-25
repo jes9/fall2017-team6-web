@@ -1,3 +1,17 @@
+<h1>When did this start?</h1>
+<h3><button {{action "whenSelected"}}>Suddenly</button></h3>
+<h3><button {{action "whenSelected"}}>Gradually</button></h3>
+<h3><button {{action "whenSelected"}}>Just started</button></h3>
+<h3><button {{action "whenSelected"}}>Since I've had the car</button></h3>
+<h2>At __ miles: (optional)</h2>
+<div class="when">
+  {{input type="text" class="when" value=other placeholder="Enter miles"}}
+</div>
+{{#link-to 'diagnostic-pages.car-select'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.cause-media'}}
   <body>
     <a href="#">Next</a> <br/>

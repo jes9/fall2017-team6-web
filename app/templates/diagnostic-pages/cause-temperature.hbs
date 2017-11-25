@@ -1,3 +1,14 @@
+<h1>When does it happen?</h1>
+<h2>When the weather is: </h2>
+<h3><button {{action "weatherSelected"}}>Hot (70° or above)</button></h3>
+<h3><button {{action "weatherSelected"}}>Cood or Cold (below 70°)</button></h3>
+<h3><button {{action "weatherSelected"}}>Humid or Rainy</button></h3>
+<h3><button {{action "weatherSelected"}}>All temperatures</button></h3>
+{{#link-to 'diagnostic-pages.car-select'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.cause-speed'}}
   <body>
     <a href="#">Next</a> <br/>
