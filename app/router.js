@@ -13,6 +13,20 @@ Router.map(function() {
   this.route('vehicle-info');
   this.route('login');
   this.route('dashboard');
+  this.route('diagnostic-pages', function() {
+    this.route('car-select');
+    this.route('problems-list');
+    this.route('cause-temperature');
+    this.route('cause-speed');
+    this.route('cause-engine');
+    this.route('cause-driving');
+    this.route('cause-ro');
+    this.route('cause-fuel');
+    this.route('cause-when');
+    this.route('cause-media');
+    this.route('form-review');
+    this.route('form-submitted');
+  });
 });
 
 export default Router;
