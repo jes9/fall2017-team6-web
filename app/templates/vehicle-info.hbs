@@ -9,7 +9,7 @@
 	   button{ text-decoration:none; color:white; font-size:150%; border:1px solid black; background:black; border-radius:15px; width:130px; padding:5px 30px;}
 	   </style>
 	   <!-- avoid submitting if validation return false -->
-	  <form name="form3" onsubmit="window.location.href='dashboard'; return false;">
+	  <form {{action "createAccount"}} name="form3" onsubmit="window.location.href='dashboard'; return false;">
 	  <input id="make" type="text" placeholder="make" required>
 	  <br />
 	  <br />
@@ -24,7 +24,6 @@
 	  <br />
 	  <br />
 	  <!-- action will prevent submitting before validation -->
-	  {{action}}
-	  <button{{action "createAccount"}}>done</button>
+	  <button {{action}}>done</button>
 	  </form>
 </div>

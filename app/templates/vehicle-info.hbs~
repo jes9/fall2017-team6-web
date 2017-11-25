@@ -10,20 +10,21 @@
 	   </style>
 	   <!-- avoid submitting if validation return false -->
 	  <form name="form3" onsubmit="window.location.href='dashboard'; return false;">
-	  <input type="text" placeholder="make" required>
+	  <input id="make" type="text" placeholder="make" required>
 	  <br />
 	  <br />
-	  <input type="text" placeholder="model" required>
+	  <input id="model" type="text" placeholder="model" required>
 	  <br />
 	  <br />
 	  <!-- make a min and max year -->
-	  <input type="number" placeholder="year" min="1970" max="2017" required>
+	  <input id="year" type="number" placeholder="year" min="1970" max="2017" required>
 	  <br />
 	  <br />
-	  <input type="number" placeholder="miles" min="0" required>
+	  <input id="miles" type="number" placeholder="miles" min="0" required>
 	  <br />
 	  <br />
 	  <!-- action will prevent submitting before validation -->
-	  <button{{action}}>done</button>
+	  {{action}}
+	  <button{{action "createAccount"}}>done</button>
 	  </form>
 </div>

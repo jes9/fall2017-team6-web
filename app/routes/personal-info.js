@@ -1,8 +1,8 @@
-import Gatekeeper from 'ember-cli-gatekeeper';
+import Ember from 'ember';
 
-export default Gatekeeper.User.AuthenticatedRoute.extend ({
-  model () {
+export default Ember.Route.extend ({
+  /*model () {
     let currentUser = this.get ('currentUser');
     return this.get ('store').query ('comments', {user: currentUser.id});
-  }
+  }*/
 });

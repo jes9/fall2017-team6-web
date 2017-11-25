@@ -7,9 +7,9 @@ export default Controller.extend({
       let register = this.get ('store').createRecord ('account', {email, password, confirm_password});
       let adapterOptions = {signIn: true};
       
-      register.save ({adapterOptions}).then (register => {
+      form1.save ({adapterOptions}).then (form1 => {
         // You can transition to a protected application route
-        transitionToRoute('personal-info');
+        this.transitionToRoute('personal-info');
       }).catch (reason => {
         // Display error message to user
       });

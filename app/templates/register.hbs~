@@ -17,7 +17,7 @@
 	  <input id="password" name="password" type="password" placeholder="password" minLength="6" maxLength="10" required>
 	  <br />
 	  <br />
-	  <input id="confirm_password" name="confirm_password" type="password" placeholder="confirm password" required>
+	  <input {{action "createAccount"}} id="confirm_password" name="confirm_password" type="password" placeholder="confirm password" required>
 	  <br />
 	  <br />
 	   <!-- check if password matches confirm_password -->
