@@ -1,3 +1,12 @@
+<h1>Which car?</h1>
+{{#each model as |carUnit|}}
+  {{car-listing car=carUnit}}
+{{/each}}
+{{#link-to 'dashboard'}}
+  <body>
+    <a href="#">Back</a> <br/>
+  </body>
+{{/link-to}}
 {{#link-to 'diagnostic-pages.problems-list'}}
   <body>
     <a href="#">Next</a> <br/>
