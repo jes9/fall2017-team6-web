@@ -2,13 +2,12 @@
 {{#each model as |carUnit|}}
   {{car-listing car=carUnit}}
 {{/each}}
+<div>
 {{#link-to 'dashboard'}}
-  <body>
-    <a href="#">Back</a> <br/>
-  </body>
+  <br/>
+    <a href="#">Back</a>
 {{/link-to}}
 {{#link-to 'diagnostic-pages.problems-list'}}
-  <body>
-    <a href="#">Next</a> <br/>
-  </body>
+    <a href="#">Next</a>
 {{/link-to}}
+</div>
