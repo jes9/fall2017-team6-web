@@ -1,9 +1,12 @@
 <h1>When does it happen?</h1>
 <h2>At a certain speed (mph): </h2>
-  <input type="range" id="s1" min="0" max="120" value="0" tabindex="0">
+  <input type="range" id="s1" min="0" max="120" value="60" tabindex="0"
+    onchange={{action 'selectSpeed' value="target.value"}}>
 <h2>At a certain RPM (x1000): </h2>
-  <input type="range" id="s1" min="0" max="8" value="0" tabindex="0">
+  <input type="range" id="s2" min="0" max="8" value="0" tabindex="0"
+    onchange={{action 'selectRpm' value="target.value"}}>
 <br>
+<button {{action "problemSelected" }} >Button</button>
 {{#link-to 'diagnostic-pages.cause-temperature'}}
     <a href="#">Back</a>
 {{/link-to}}
