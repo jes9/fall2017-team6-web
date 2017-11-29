@@ -36,4 +36,27 @@ export default function() {
       }]
     };
   });
+
+  this.get('/forms/1', function () {
+    return {
+      data: {
+        type: 'form',
+        id: '1',
+        attributes: {
+          carmodel: 'X-wing Fighter',
+          carimage: '/assets/images/T70XWing-Fathead.png',
+          driving: 'Accelerating',
+          engine: 'Cold',
+          fuel: 'Unleaded',
+          ro: 'Always',
+          speed: '58',
+          rpm: '0',
+          temp: 'Hot (70° or above)',
+          when: 'Suddenly',
+          problem: 'Hard starting',
+          other1: 'Test other notes',
+        }
+      }
+    }
+  });
 }

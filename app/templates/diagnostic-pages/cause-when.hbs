@@ -1,11 +1,33 @@
 <h1>When did this start?</h1>
-<h3><button {{action "whenSelected"}}>Suddenly</button></h3>
-<h3><button {{action "whenSelected"}}>Gradually</button></h3>
-<h3><button {{action "whenSelected"}}>Just started</button></h3>
-<h3><button {{action "whenSelected"}}>Since I've had the car</button></h3>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="whenOptions" value="Suddenly"
+    onchange={{action 'selectWhen' value="target.value"}}>
+    <span>Suddenly</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="whenOptions" value="Gradually"
+    onchange={{action 'selectWhen' value="target.value"}}>
+    <span>Gradually</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="whenOptions" value="Just started"
+    onchange={{action 'selectWhen' value="target.value"}}>
+    <span>Just started</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+  <input type="radio" id="option-4" class="mdl-radio__button" name="whenOptions" value="Since I've had the car"
+    onchange={{action 'selectWhen' value="target.value"}}>
+    <span>Since I've had the car</span>
+</label>
+<br>
 <h2>At __ miles: (optional)</h2>
 <div class="when">
   {{input type="text" class="when" value=other placeholder="Enter miles"}}
+</div>
 </div>
 {{#link-to 'diagnostic-pages.cause-fuel'}}
     <a href="#">Back</a>
