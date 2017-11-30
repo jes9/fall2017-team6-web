@@ -7,31 +7,31 @@ export default function() {
         type: 'cars',
         id: '1',
         attributes: {
-          carmake: 'Incom Corporation',
-          carmodel: 'X-wing Fighter',
-          carmiles: '9994',
-          caryear: '2015',
-          carimage: '/assets/images/T70XWing-Fathead.png'
+          carmake: 'Tesla',
+          carmodel: 'Model X',
+          carmiles: '117',
+          caryear: '2017',
+          carimage: '/assets/images/tesla_model-x_2017.jpg'
         }
       }, {
         type: 'cars',
         id: '2',
         attributes: {
-          carmake: 'Sienar Fleet Systems',
-          carmodel: 'TIE Fighter',
-          carmiles: '9997',
-          caryear: '2077',
-          carimage: '/assets/images/tie-fighter.jpg'
+          carmake: 'Toyota',
+          carmodel: 'Rav 4',
+          carmiles: '156997',
+          caryear: '2010',
+          carimage: '/assets/images/toyota_rav-4_2010.jpg'
         }
       }, {
         type: 'cars',
         id: '3',
         attributes: {
-          carmake: 'Corellian Engineering Corporation',
-          carmodel: 'Millennium Falcon',
-          carmiles: '9999',
+          carmake: 'Toyota',
+          carmodel: 'Land Cruiser',
+          carmiles: '193576',
           caryear: '1977',
-          carimage: '/assets/images/MillenniumFalcon2-Fathead.png'
+          carimage: '/assets/images/toyota_land-cruiser_1997.jpg'
         }
       }]
     };
