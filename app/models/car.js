@@ -5,5 +5,6 @@ export default DS.Model.extend({
   carmodel: DS.attr(),
   carmiles: DS.attr(),
   caryear: DS.attr(),
-  carimage: DS.attr()
+  carimage: DS.attr(),
+  user: DS.belongsTo('user')
 });

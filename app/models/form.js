@@ -13,5 +13,6 @@ export default DS.Model.extend({
   when: DS.attr(),
   problem: DS.attr(),
   other1: DS.attr(),
-  other2: DS.attr()
+  other2: DS.attr(),
+  user: DS.belongsTo('user')
 });
