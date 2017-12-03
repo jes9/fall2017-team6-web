@@ -1,6 +1,6 @@
 <h1>Which car?</h1>
 
-<button {{action "carSelected" }} >Button</button>
+
 <div class="selections">
   {{#each model as |carUnit|}}
     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-{{carUnit.carmodel}}">
@@ -15,7 +15,7 @@
   <br/>
     <a href="#">Back</a>
   {{/link-to}}
-  {{#link-to 'diagnostic-pages.problems-list'}}
-    <a href="#">Next</a>
-  {{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>
+
 </div>

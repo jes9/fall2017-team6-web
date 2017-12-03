@@ -21,9 +21,9 @@
 <h3>Other notes:</h3>
 {{model.other1}}
 <br>
+<button {{action "prevParam" }} >Button</button>
 {{#link-to 'diagnostic-pages.cause-media'}}
     <a href="#">Back</a>
 {{/link-to}}
-{{#link-to 'diagnostic-pages.form-submitted'}}
-    <a href="#">Submit</a>
-{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Submit</a>

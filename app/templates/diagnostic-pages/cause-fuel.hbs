@@ -27,11 +27,10 @@
 </div>
 <h2>Fuel Brand: (optional)</h2>
 <div class="fuel-brand">
-  {{input type="text" class="fuel-brand" value=other placeholder="BP, Shell, Exxon, etc."}}
+  {{input type="text" class="fuel-brand" value=option placeholder="BP, Shell, Exxon, etc."}}
 </div>
 {{#link-to 'diagnostic-pages.cause-ro'}}
     <a href="#">Back</a>
 {{/link-to}}
-{{#link-to 'diagnostic-pages.cause-when'}}
-    <a href="#">Next</a>
-{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>

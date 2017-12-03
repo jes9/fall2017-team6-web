@@ -20,7 +20,7 @@ export default function() {
           carmake: 'Toyota',
           carmodel: 'Rav 4',
           carmiles: '156997',
-          caryear: '2010',
+          caryear: '2007',
           carimage: '/assets/images/toyota_rav-4_2010.jpg'
         }
       }, {
@@ -58,5 +58,30 @@ export default function() {
         }
       }
     }
+  });
+  this.get('/users/1', function () {
+   return {
+     data: {
+       type: 'users',
+       id: '1',
+       attributes: {
+         username: 'Test1',
+         password: 'Pass1',
+         firstname: 'Poe',
+         lastname: 'Dameron',
+         email: 'poe.dameron@gmail.com',
+         gender: 'male',
+         age: '32',
+         phonenumber: '888-777-7777',
+         forms: [{
+
+         }]
+       }
+      }
+    }
+  });
+
+  this.post('/forms', function (schema, req){
+
   });
 }
