@@ -1,29 +1,33 @@
-<h1>Diagnostic Form Review</h1>
-<img src={{model.carimage}} style="width:153px;hieght:150px;">
-<div class="detail carmodel">
-  {{model.carmodel}}
-</div>
-<h3>What's wrong?</h3>
-{{model.problem}}
-<h3>When the weather is:</h3>
-{{model.temp}}
-<h3>When the engine temperature gauge reads:</h3>
-{{model.engine}}
-<h3>During these driving conditions:</h3>
-{{model.driving}}
-<h3>How often:</h3>
-{{model.ro}}
-<h3>Type of fuel used:</h3>
-{{model.fuel}}
-<h3>When this started:</h3>
-{{model.when}}
-<h3>Images</h3>
-<h3>Other notes:</h3>
-{{model.other1}}
+<div class="body" style="width:350px;hieght:150px;">
+  <h1>Diagnostic Form Review</h1>
+  <img src={{model.carimage}} style="width:153px;hieght:150px;">
+  <div class="detail carmodel">
+    {{model.carmodel}}
+  </div>
+  <h3>What's wrong?</h3>
+    {{model.problem}}
+  <h3>When the weather is:</h3>
+    {{model.temp}}
+  <h3>When the engine temperature gauge reads:</h3>
+    {{model.engine}}
+  <h3>During these driving conditions:</h3>
+    {{model.driving}}
+  <h3>How often:</h3>
+    {{model.ro}}
+  <h3>Type of fuel used:</h3>
+    {{model.fuel}}
+  <h3>When this started:</h3>
+    {{model.when}}
+  <h3>Images</h3>
+  <h3>Other notes:</h3>
+    <p>{{model.other1}}</p>
+    <p>{{model.other2}}</p>
 <br>
-<button {{action "prevParam" }} >Button</button>
-{{#link-to 'diagnostic-pages.cause-media'}}
+</div>
+<div class="navigation">
+  <button {{action "prevParam" }} >Button</button>
+  {{#link-to 'diagnostic-pages.cause-media'}}
     <a href="#">Back</a>
-{{/link-to}}
-
+  {{/link-to}}
     <a href="#" {{action "nextPage"}}>Submit</a>
+</div>

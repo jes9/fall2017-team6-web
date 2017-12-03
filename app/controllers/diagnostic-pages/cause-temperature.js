@@ -14,6 +14,7 @@ export default Ember.Controller.extend({
       this.set('selected', choice);
     },
     nextPage(){
+      if (this.get('selected') !== null){
       let paramArr = this.get('param');
       this.set('array', [paramArr[0],
         paramArr[1],
@@ -22,6 +23,7 @@ export default Ember.Controller.extend({
       this.transitionToRoute('diagnostic-pages.cause-speed').then(function(newRoute){
         newRoute.controller.set('param',param);
       });
+    }
     }
   }
 });

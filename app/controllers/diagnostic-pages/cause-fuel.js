@@ -12,6 +12,7 @@ export default Ember.Controller.extend({
       this.set('selected', choice);
     },
     nextPage(){
+      if (this.get('selected') !== null){
       this.set('optional', this.get('option'));
       let paramArr = this.get('param');
       this.set('array', [paramArr[0],
@@ -28,6 +29,7 @@ export default Ember.Controller.extend({
       this.transitionToRoute('diagnostic-pages.cause-when').then(function(newRoute){
         newRoute.controller.set('param',param);
       });
+    }
     }
   }
 });
