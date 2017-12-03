@@ -27,10 +27,11 @@ Router.map(function() {
     this.route('form-review');
     this.route('form-submitted');
     this.route('chat');
-    this.route('mechanic');
-    this.route('sign-in');
-    this.route('sign-up');
+    this.route('begin-page');
   });
+  this.route('mechanic');
+  this.route('sign-in');
+  this.route('sign-up');
 });
 
 export default Router;

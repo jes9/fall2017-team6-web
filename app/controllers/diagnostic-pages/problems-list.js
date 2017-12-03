@@ -14,13 +14,15 @@ export default Ember.Controller.extend({
       this.set('selected', choice);
     },
     nextPage(){
-      let paramArr = this.get('param');
-      this.set('array', [paramArr[0],
-        this.get('selected')]);
-      let param = this.array;
-      this.transitionToRoute('diagnostic-pages.cause-temperature').then(function(newRoute){
-        newRoute.controller.set('param',param);
-      });
+      if (this.get('selected') !== null){
+        let paramArr = this.get('param');
+        this.set('array', [paramArr[0],
+          this.get('selected')]);
+        let param = this.array;
+          this.transitionToRoute('diagnostic-pages.cause-temperature').then(function(newRoute){
+            newRoute.controller.set('param',param);
+          });
+      }
     }
   }
 });

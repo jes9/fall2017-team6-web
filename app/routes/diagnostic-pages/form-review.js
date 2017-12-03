@@ -8,6 +8,7 @@ export default Ember.Route.extend({
 }), 2000);
   },
   model() {
+    /*
     let form = { carmodel: '',
       carimage: '',
       carid: '',
@@ -23,6 +24,7 @@ export default Ember.Route.extend({
       other1: '',
       other2: ''};
     return form;
-    //return this.get('store').findRecord('form', 1);
+    */
+    return this.get('store').findRecord('form', 1);
   },
 });

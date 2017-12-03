@@ -39,11 +39,13 @@ export default Ember.Controller.extend({
     */
     },
     nextPage(){
-      this.set('array', [this.get('selected')]);
-      let param = this.array;
-      this.transitionToRoute('diagnostic-pages.problems-list').then(function(newRoute){
-        newRoute.controller.set('param',param);
-      });
+      if (this.get('selected') !== null){
+        this.set('array', [this.get('selected')]);
+        let param = this.array;
+        this.transitionToRoute('diagnostic-pages.problems-list').then(function(newRoute){
+          newRoute.controller.set('param',param);
+        });
+      }
     }
   }
 });
