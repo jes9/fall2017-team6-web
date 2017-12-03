@@ -11,7 +11,13 @@ export default Ember.Controller.extend({
       this.set('selected', choice);
     },
     nextPage(){
-      this.set('array', [this.get('param'), this.get('selected')]);
+      let paramArr = this.get('param');
+      this.set('array', [paramArr[0],
+        paramArr[1],
+        paramArr[2],
+        paramArr[3],
+        paramArr[4],
+        this.get('selected')]);
       let param = this.array;
       this.transitionToRoute('diagnostic-pages.cause-driving').then(function(newRoute){
         newRoute.controller.set('param',param);

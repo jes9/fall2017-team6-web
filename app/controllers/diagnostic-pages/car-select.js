@@ -12,8 +12,8 @@ export default Ember.Controller.extend({
       //alert(this.get('selected'));
     },
     carSelected() {
-      //this.set('array', ['Test3', 'Test2', 'Test']);
-      //alert(this.array[0]);
+      this.set('array', ['Test3', 'Test2', 'Test']);
+      alert(this.array[0]);
       //alert(var1);
       //alert(var3);
       //var form = this.get('store').createRecord('form');

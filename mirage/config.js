@@ -43,8 +43,8 @@ export default function() {
         type: 'form',
         id: '1',
         attributes: {
-          carmodel: 'X-wing Fighter',
-          carimage: '/assets/images/T70XWing-Fathead.png',
+          carmodel: 'Land Cruiser',
+          carimage: '/assets/images/toyota_land-cruiser_1997.jpg',
           driving: 'Accelerating',
           engine: 'Cold',
           fuel: 'Unleaded',

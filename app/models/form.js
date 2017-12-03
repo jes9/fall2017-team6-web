@@ -1,9 +1,9 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  carmodel: DS.attr(),
-  /*
   carimage: DS.attr(),
+  carmodel: DS.attr(),
+  carid: DS.attr(),
   driving: DS.attr(),
   engine: DS.attr(),
   fuel: DS.attr(),
@@ -15,6 +15,7 @@ export default DS.Model.extend({
   problem: DS.attr(),
   other1: DS.attr(),
   other2: DS.attr(),
+  /*
   user: DS.belongsTo('user')
   */
 });

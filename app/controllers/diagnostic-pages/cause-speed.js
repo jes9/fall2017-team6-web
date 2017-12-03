@@ -16,7 +16,12 @@ export default Ember.Controller.extend({
       this.set('rpm', choice);
     },
     nextPage(){
-      this.set('array', [this.get('param'), this.get('speed'), this.get('rpm')]);
+      let paramArr = this.get('param');
+      this.set('array', [paramArr[0],
+        paramArr[1],
+        paramArr[2],
+        this.get('speed'),
+        this.get('rpm')]);
       let param = this.array;
       this.transitionToRoute('diagnostic-pages.cause-engine').then(function(newRoute){
         newRoute.controller.set('param',param);
