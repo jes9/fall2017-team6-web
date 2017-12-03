@@ -1,19 +1,30 @@
 <div align="center">
-<h1>Logo</h1>
+  <a {{action 'home'}} class="image">
+    <img src="/assets/images/SignIn_Logo.png" alt="" style="width:184px;height:49px;">
+  </a>
   <div class="Login-info">
     <div class="form-group">
       {{!--<label>Username</label>--}}
+      <style type="text/css">
+  	   button{ text-decoration:none; font-size:150%; border:1px solid black; background:white; border-radius:15px; width:150px; padding:5px 30px;}
+  	  </style>
+      <style>
+  	  input{border:0;outline:0;background:transparent;border-bottom:1px solid black;width:400px; height:50px; font-size:30px;}
+  	  </style>
       {{input type="text" class="form-control" value=username
-      enter="login" placeholder="User"}}
+      enter="login" placeholder="Email"}}
     </div>
+    <br />
     <div class="form-group">
       {{!--<label>Password</label>--}}
       {{input type="password" class="form-control" value=password
       enter="login" placeholder="Password"}}
     </div>
-
-    {{!<a href=# { {action "login"} }>Sign In Test</a>}}
-    <button {{action "login"}}>Sign In</button>
+    <br />
+    <div class="button">
+      {{!<a href=# { {action "login"} }>Sign In Test</a>}}
+      <button {{action "login"}}>Sign In</button>
+    </div>
 
 
   </div>
