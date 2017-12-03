@@ -1,1 +1,12 @@
-{{outlet}}
+{{#mdl-layout fixedHeader=true}}
+  {{#mdl-layout-header}}
+    {{mdl-toolbar title="Gatekeeper"}}
+  {{/mdl-layout-header}}
+
+  {{#mdl-layout-content}}
+    <div style="padding: 16px">
+      <div>{{#link-to "dashboard"}}Unauthorized Test{{/link-to}}</div>
+      <div><a href="#" {{action "signOut" target=gatekeeper}}>Sign Out</a></div>
+    </div>
+  {{/mdl-layout-content}}
+{{/mdl-layout}}
