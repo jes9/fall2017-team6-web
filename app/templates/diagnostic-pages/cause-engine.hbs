@@ -1,0 +1,39 @@
+<h1>When does it happen?</h1>
+<h2>When the engine temperature gauge reads: </h2>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="engineOptions" value="Cold"
+    onchange={{action 'selectEngine' value="target.value"}}>
+    <span>Cold</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="engineOptions" value="Warm-up"
+    onchange={{action 'selectEngine' value="target.value"}}>
+    <span>Warm-up</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="engineOptions" value="Normal"
+    onchange={{action 'selectEngine' value="target.value"}}>
+    <span>Normal</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+  <input type="radio" id="option-4" class="mdl-radio__button" name="engineOptions" value="Hot"
+    onchange={{action 'selectEngine' value="target.value"}}>
+    <span>Hot</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+  <input type="radio" id="option-5" class="mdl-radio__button" name="engineOptions" value="All temperatures"
+    onchange={{action 'selectEngine' value="target.value"}}>
+    <span>All temperatures</span>
+</label>
+<br>
+</div>
+{{#link-to 'diagnostic-pages.cause-speed'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>

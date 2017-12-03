@@ -1,0 +1,75 @@
+<h1>What's wrong?</h1>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="problemOptions" value="Hard Starting"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Hard Starting</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="problemOptions" value="Delayed Starting"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Delayed Starting</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="problemOptions" value="Starts normally but engine stalls"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Starts normally but engine stalls</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+  <input type="radio" id="option-4" class="mdl-radio__button" name="problemOptions" value="Unsteady Idle Speed"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Unsteady Idle Speed</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+  <input type="radio" id="option-5" class="mdl-radio__button" name="problemOptions" value="High Idle Speed"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>High Idle Speed</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
+  <input type="radio" id="option-6" class="mdl-radio__button" name="problemOptions" value="Engine Stalls on Acceleration"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Engine Stalls on Acceleration</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-7">
+  <input type="radio" id="option-7" class="mdl-radio__button" name="problemOptions" value="Engine Stalls on Decceleration"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Engine Stalls on Decceleration</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-8">
+  <input type="radio" id="option-8" class="mdl-radio__button" name="problemOptions" value="Engine Pings or Knocks"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Engine Pings or Knocks</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-9">
+  <input type="radio" id="option-9" class="mdl-radio__button" name="problemOptions" value="Engine Runs After Key is Turned Off"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Engine Runs After Key is Turned Off</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-10">
+  <input type="radio" id="option-10" class="mdl-radio__button" name="problemOptions" value="Engine Makes a Popping Noise"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Engine Makes a Popping Noise</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-11">
+  <input type="radio" id="option-11" class="mdl-radio__button" name="problemOptions" value="Poor Gas Mileage"
+    onchange={{action 'selectProblem' value="target.value"}}>
+    <span>Poor Gas Mileage</span>
+</label>
+<br>
+  {{input type="text" class="other-problem" value=other placeholder="Other"}}
+</div>
+{{#link-to 'diagnostic-pages.car-select'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>

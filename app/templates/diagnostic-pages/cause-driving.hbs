@@ -1,0 +1,33 @@
+<h1>When does it happen?</h1>
+<h2>During these driving conditions: </h2>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="drivingOptions" value="Accelerating"
+    onchange={{action 'selectDrive' value="target.value"}}>
+    <span>Accelerating</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="drivingOptions" value="Decelerating"
+    onchange={{action 'selectDrive' value="target.value"}}>
+    <span>Decelerating</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="drivingOptions" value="Cruising"
+    onchange={{action 'selectDrive' value="target.value"}}>
+    <span>Cruising</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+  <input type="radio" id="option-4" class="mdl-radio__button" name="drivingOptions" value="Braking"
+    onchange={{action 'selectDrive' value="target.value"}}>
+    <span>Braking</span>
+</label>
+<br>
+</div>
+{{#link-to 'diagnostic-pages.cause-engine'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>

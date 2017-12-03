@@ -1,0 +1,26 @@
+<h1>How often?</h1>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="roOptions" value="Always"
+    onchange={{action 'selectRo' value="target.value"}}>
+    <span>Always</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="roOptions" value="Sometimes"
+    onchange={{action 'selectRo' value="target.value"}}>
+    <span>Sometimes</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="roOptions" value="Rarely"
+    onchange={{action 'selectRo' value="target.value"}}>
+    <span>Rarely</span>
+</label>
+<br>
+</div>
+{{#link-to 'diagnostic-pages.cause-driving'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}} >Next</a>

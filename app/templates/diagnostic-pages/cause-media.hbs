@@ -1,0 +1,14 @@
+<h2>Upload media: (optional)</h2>
+  <div class="upload-media">
+      <h3><button {{action "mediaSelected"}}><img src="/assets/images/AudioIcon_DiagnosisForm.png" style="width:153px;hieght:150px;"><br>Audio</button></h3>
+      <h3><button {{action "mediaSelected"}}><img src="/assets/images/CameraIcon_DiagnosisForm.png" style="width:153px;hieght:150px;"><br>Photo/Video</button></h3>
+      </div>
+<h2>Other notes: (optional)</h2>
+<div class="notes">
+  {{input type="text" class="notes" value=other placeholder="Type something"}}
+</div>
+{{#link-to 'diagnostic-pages.cause-when'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>

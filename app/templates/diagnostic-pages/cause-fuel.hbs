@@ -1,0 +1,36 @@
+<h1>What kind of fuel do you use?</h1>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="fuelOptions" value="Unleaded"
+    onchange={{action 'selectFuel' value="target.value"}}>
+    <span>Unleaded</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="fuelOptions" value="Regular"
+    onchange={{action 'selectFuel' value="target.value"}}>
+    <span>Regular</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="fuelOptions" value="Premium"
+    onchange={{action 'selectFuel' value="target.value"}}>
+    <span>Premium</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+  <input type="radio" id="option-4" class="mdl-radio__button" name="fuelOptions" value="Diesel"
+    onchange={{action 'selectFuel' value="target.value"}}>
+    <span>Diesel</span>
+</label>
+<br>
+</div>
+<h2>Fuel Brand: (optional)</h2>
+<div class="fuel-brand">
+  {{input type="text" class="fuel-brand" value=option placeholder="BP, Shell, Exxon, etc."}}
+</div>
+{{#link-to 'diagnostic-pages.cause-ro'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>

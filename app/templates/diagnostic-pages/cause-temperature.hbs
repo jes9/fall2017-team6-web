@@ -1,0 +1,33 @@
+<h1>When does it happen?</h1>
+<h2>When the weather is: </h2>
+<div class="selections">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+  <input type="radio" id="option-1" class="mdl-radio__button" name="weatherOptions" value="Hot (70° or above)"
+    onchange={{action 'selectWeather' value="target.value"}}>
+    <span>Hot (70° or above)</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+  <input type="radio" id="option-2" class="mdl-radio__button" name="weatherOptions" value="Cood or Cold (below 70°)"
+    onchange={{action 'selectWeather' value="target.value"}}>
+    <span>Cood or Cold (below 70°)</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+  <input type="radio" id="option-3" class="mdl-radio__button" name="weatherOptions" value="Humid or Rainy"
+    onchange={{action 'selectWeather' value="target.value"}}>
+    <span>Humid or Rainy</span>
+</label>
+<br>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+  <input type="radio" id="option-4" class="mdl-radio__button" name="weatherOptions" value="All temperatures"
+    onchange={{action 'selectWeather' value="target.value"}}>
+    <span>All temperatures</span>
+</label>
+<br>
+</div>
+{{#link-to 'diagnostic-pages.problems-list'}}
+    <a href="#">Back</a>
+{{/link-to}}
+
+    <a href="#" {{action "nextPage"}}>Next</a>
