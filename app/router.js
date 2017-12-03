@@ -26,6 +26,7 @@ Router.map(function() {
     this.route('cause-media');
     this.route('form-review');
     this.route('form-submitted');
+    this.route('chat');
   });
 });
 
